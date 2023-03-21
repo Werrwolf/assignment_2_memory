@@ -5,9 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class MenuBehaviour : MonoBehaviour
 {
-    public void triggerMenuBehaviour (int i){
+    public void triggerMenuBehaviour (int wichButton){
         // 0: play again; 1: quit game
-        switch (i){
+        switch (wichButton){
         default:
         case (0):
             SceneManager.LoadScene("Level");
