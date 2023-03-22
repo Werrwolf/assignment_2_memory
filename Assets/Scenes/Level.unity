@@ -161,7 +161,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -158.89, y: 40}
-  m_SizeDelta: {x: 47.782, y: 77.148}
+  m_SizeDelta: {x: 47, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &212647284
 MonoBehaviour:
@@ -244,7 +244,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 212647284}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 212647287}
+        m_TargetAssemblyTypeName: Card, Assembly-CSharp
+        m_MethodName: flipCard
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &212647287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -298,7 +310,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -78.715, y: 130}
-  m_SizeDelta: {x: 47.43, y: 80}
+  m_SizeDelta: {x: 47, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &365708453
 MonoBehaviour:
@@ -381,7 +393,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 365708453}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 365708456}
+        m_TargetAssemblyTypeName: Card, Assembly-CSharp
+        m_MethodName: flipCard
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &365708456
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -487,7 +511,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0.83298, y: 130}
-  m_SizeDelta: {x: 48.334, y: 78.099}
+  m_SizeDelta: {x: 47, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &459087602
 MonoBehaviour:
@@ -570,7 +594,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 459087602}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 459087605}
+        m_TargetAssemblyTypeName: Card, Assembly-CSharp
+        m_MethodName: flipCard
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &459087605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -624,7 +660,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -158.89088, y: -50}
-  m_SizeDelta: {x: 47.782, y: 80}
+  m_SizeDelta: {x: 47, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &501337745
 MonoBehaviour:
@@ -707,7 +743,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 501337745}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 501337748}
+        m_TargetAssemblyTypeName: Card, Assembly-CSharp
+        m_MethodName: flipCard
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &501337748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1083,7 +1131,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 80.634, y: 130}
-  m_SizeDelta: {x: 48.732, y: 78.099}
+  m_SizeDelta: {x: 47, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1123981137
 MonoBehaviour:
@@ -1166,7 +1214,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1123981137}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1123981140}
+        m_TargetAssemblyTypeName: Card, Assembly-CSharp
+        m_MethodName: flipCard
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1123981140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1220,7 +1280,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 159.208, y: 40}
-  m_SizeDelta: {x: 48.416, y: 77.148}
+  m_SizeDelta: {x: 47, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1159505572
 MonoBehaviour:
@@ -1369,7 +1429,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 160.951, y: -50}
-  m_SizeDelta: {x: 48.099, y: 80}
+  m_SizeDelta: {x: 47, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1284349845
 MonoBehaviour:
@@ -1452,7 +1512,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1284349845}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1284349848}
+        m_TargetAssemblyTypeName: Card, Assembly-CSharp
+        m_MethodName: flipCard
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1284349848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1506,7 +1578,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0.83298, y: 40}
-  m_SizeDelta: {x: 48.334, y: 78.416}
+  m_SizeDelta: {x: 47, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1297642675
 MonoBehaviour:
@@ -1589,7 +1661,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1297642675}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1297642678}
+        m_TargetAssemblyTypeName: Card, Assembly-CSharp
+        m_MethodName: flipCard
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1297642678
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1643,7 +1727,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 80.634, y: -140}
-  m_SizeDelta: {x: 48.732, y: 78.074}
+  m_SizeDelta: {x: 47, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1458101234
 MonoBehaviour:
@@ -1727,9 +1811,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1458101232}
+      - m_Target: {fileID: 1458101237}
         m_TargetAssemblyTypeName: Card, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: flipCard
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1868,7 +1952,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0.833, y: -50}
-  m_SizeDelta: {x: 48.334, y: 80}
+  m_SizeDelta: {x: 47, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1644274395
 MonoBehaviour:
@@ -1951,7 +2035,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1644274395}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1644274398}
+        m_TargetAssemblyTypeName: Card, Assembly-CSharp
+        m_MethodName: flipCard
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1644274398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2005,7 +2101,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 80.63399, y: -50}
-  m_SizeDelta: {x: 48.732, y: 80}
+  m_SizeDelta: {x: 47, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1666505901
 MonoBehaviour:
@@ -2088,7 +2184,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1666505901}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1666505904}
+        m_TargetAssemblyTypeName: Card, Assembly-CSharp
+        m_MethodName: flipCard
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1666505904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2210,7 +2318,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0.83298, y: -140}
-  m_SizeDelta: {x: 48.334, y: 78.074}
+  m_SizeDelta: {x: 47, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1737015397
 MonoBehaviour:
@@ -2293,7 +2401,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1737015397}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1737015400}
+        m_TargetAssemblyTypeName: Card, Assembly-CSharp
+        m_MethodName: flipCard
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1737015400
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2419,7 +2539,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -78.715, y: -140}
-  m_SizeDelta: {x: 47.431, y: 78.073}
+  m_SizeDelta: {x: 47, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1818044971
 MonoBehaviour:
@@ -2502,7 +2622,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1818044971}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1818044974}
+        m_TargetAssemblyTypeName: Card, Assembly-CSharp
+        m_MethodName: flipCard
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1818044974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2556,7 +2688,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -78.715, y: 40}
-  m_SizeDelta: {x: 47.43, y: 77.148}
+  m_SizeDelta: {x: 47, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1829470998
 MonoBehaviour:
@@ -2639,7 +2771,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1829470998}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1829471001}
+        m_TargetAssemblyTypeName: Card, Assembly-CSharp
+        m_MethodName: flipCard
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1829471001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2693,7 +2837,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -78.715, y: -50}
-  m_SizeDelta: {x: 47.43, y: 80}
+  m_SizeDelta: {x: 47, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1995022511
 MonoBehaviour:
@@ -2776,7 +2920,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1995022511}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1995022514}
+        m_TargetAssemblyTypeName: Card, Assembly-CSharp
+        m_MethodName: flipCard
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1995022514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2830,7 +2986,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 80.63399, y: 40}
-  m_SizeDelta: {x: 48.732, y: 78.416}
+  m_SizeDelta: {x: 47, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2088389387
 MonoBehaviour:
@@ -2913,7 +3069,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2088389387}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2088389390}
+        m_TargetAssemblyTypeName: Card, Assembly-CSharp
+        m_MethodName: flipCard
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2088389390
 MonoBehaviour:
   m_ObjectHideFlags: 0
