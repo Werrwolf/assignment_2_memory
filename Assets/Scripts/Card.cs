@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Card : MonoBehaviour
-{
+{   
+    // if true no user actions are allowed
     public static bool GAME_INTERRUPTED = false;
 
     [SerializeField]
@@ -25,6 +26,7 @@ public class Card : MonoBehaviour
         _gameManager = GameObject.FindGameObjectWithTag("Manager");
     }
 
+    // initializing card graphics
     public void setupGraphics(){
         _cardBack = _gameManager.GetComponent<GameManager>().getCardBack();
         _cardFace = _gameManager.GetComponent<GameManager>().getCardFace(_cardValue);
@@ -39,12 +41,14 @@ public class Card : MonoBehaviour
         else if (_state == 1)
             _state = 0;
 
+        //check if card is showing its back(1) or front(0)
         if (_state == 0 && !GAME_INTERRUPTED)
             GetComponent<Image>().sprite = _cardBack;
         else if  ( _state == 1 && !GAME_INTERRUPTED)
             GetComponent<Image>().sprite = _cardFace;
     }
 
+    //get or set cardValue
     public int cardValue{
         get => _cardValue; 
         set => _cardValue = value; 
@@ -68,8 +72,10 @@ public class Card : MonoBehaviour
 
     IEnumerator pause(){
         yield return new WaitForSeconds(1);
+        //no match (_state = 0)
         if (_state == 0)
             GetComponent<Image>().sprite = _cardBack;
+        // match (_state = 1)
         else if (_state == 1)
             GetComponent<Image>().sprite = _cardFace;
         GAME_INTERRUPTED = false;

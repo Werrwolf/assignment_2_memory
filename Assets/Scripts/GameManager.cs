@@ -26,16 +26,20 @@ public class GameManager : MonoBehaviour
     }
 
     void initializeCards(){
+        // cycle through all cards and assign each value twice (create a pair)
         for (int id = 0; id < 2; id++){
+            // assign one of 8 different possible pictures
             for (int i = 1; i < 9; i++){
 
                 bool test = false;
                 int choice = 0;
 
+                // find a not initialized card
                 while (!test) {
                     choice = Random.Range(0, cards.Length);
                     test = !(cards[choice].GetComponent<Card>().initialized);
                 }
+                //assign picture i to it
                 cards[choice].GetComponent<Card>().cardValue = i;
                 cards[choice].GetComponent<Card>().initialized = true;
             }
@@ -51,24 +55,29 @@ public class GameManager : MonoBehaviour
         List<int> openCards = new List<int>();
 
         for ( int i = 0; i < cards.Length; i++){
+            //if there is only one card facing up, add it to openCards
             if (cards[i].GetComponent<Card>().state == 1){
                 openCards.Add(i);
             }
         }
 
+        //if two cards are facing up, check if they show same picture
         if (openCards.Count==2){
             cardComparison (openCards);
         }
     }
 
     void cardComparison(List<int>openCards){
+        // Disable all user actions until after comparison
         Card.GAME_INTERRUPTED = true;
         int state = 0;
 
+        //check if open cards show the same picture
         if (cards[openCards[0]].GetComponent<Card>().cardValue == cards[openCards[1]].GetComponent<Card>().cardValue){
             state = 2; 
             _matches --;
             remainingText.text = "Remaining Pairs " + _matches;
+            // all pairs found
             if (_matches == 0)
                 SceneManager.LoadScene("Menu");
         }
