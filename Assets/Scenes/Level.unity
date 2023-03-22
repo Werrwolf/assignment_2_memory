@@ -2474,8 +2474,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardFace:
-  - {fileID: 21300000, guid: c3da199b48fe9ef4f992486137c59d8c, type: 3}
   - {fileID: 21300000, guid: 1d86dd4044202d542a53ffe423ddbb45, type: 3}
+  - {fileID: 21300000, guid: c3da199b48fe9ef4f992486137c59d8c, type: 3}
   - {fileID: 21300000, guid: 0079ef2f8fda1af4d8b623a7c2d6b58d, type: 3}
   - {fileID: 21300000, guid: 4818c37e53545404cbbbb8c815ef5c67, type: 3}
   - {fileID: 21300000, guid: 6559bb394c9d0b64bba2f29cd4229d85, type: 3}
@@ -2500,7 +2500,7 @@ MonoBehaviour:
   - {fileID: 1818044969}
   - {fileID: 1829470996}
   - {fileID: 1458101232}
-  matchText: {fileID: 821549559}
+  remainingText: {fileID: 821549559}
 --- !u!1 &1818044969
 GameObject:
   m_ObjectHideFlags: 0

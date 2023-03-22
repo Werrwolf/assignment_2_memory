@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Card : MonoBehaviour
 {
-    public static bool DO_NOT = false;
+    public static bool GAME_INTERRUPTED = false;
 
     [SerializeField]
     private int _state; 
@@ -17,17 +17,17 @@ public class Card : MonoBehaviour
     private Sprite _cardBack;
     private Sprite _cardFace;
 
-    private GameObject _manager;
+    private GameObject _gameManager;
 
 
     void Start(){
         _state = 1;
-        _manager = GameObject.FindGameObjectWithTag("Manager");
+        _gameManager = GameObject.FindGameObjectWithTag("Manager");
     }
 
     public void setupGraphics(){
-        _cardBack = _manager.GetComponent<GameManager>().getCardBack();
-        _cardFace = _manager.GetComponent<GameManager>().getCardFace(_cardValue);
+        _cardBack = _gameManager.GetComponent<GameManager>().getCardBack();
+        _cardFace = _gameManager.GetComponent<GameManager>().getCardFace(_cardValue);
     
         flipCard();
     }
@@ -39,9 +39,9 @@ public class Card : MonoBehaviour
         else if (_state == 1)
             _state = 0;
 
-        if (_state == 0 && !DO_NOT)
+        if (_state == 0 && !GAME_INTERRUPTED)
             GetComponent<Image>().sprite = _cardBack;
-        else if  ( _state == 1 && !DO_NOT)
+        else if  ( _state == 1 && !GAME_INTERRUPTED)
             GetComponent<Image>().sprite = _cardFace;
     }
 
@@ -72,6 +72,6 @@ public class Card : MonoBehaviour
             GetComponent<Image>().sprite = _cardBack;
         else if (_state == 1)
             GetComponent<Image>().sprite = _cardFace;
-        DO_NOT = false;
+        GAME_INTERRUPTED = false;
     }
 }
