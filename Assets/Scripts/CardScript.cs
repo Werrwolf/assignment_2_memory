@@ -1,3 +1,4 @@
+/*
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,72 +6,72 @@ using UnityEngine.UI;
 
 public class CardScript : MonoBehaviour{
     // no card is allowed to be flipped
-    bool initialized = false;
     public static bool DO_NOT = false;
     [SerializeField]
-    int state;
+    private int _state;
     [SerializeField]
-    int cardValue;
+    private int _cardValue;
     [SerializeField]
-    
-     Sprite cardBack;
-     Sprite cardFront;
-
-    GameObject gameManager;
+    private bool _initialized = false;
+    Sprite cardBack;
+    Sprite cardFront;
+    private GameObject gameManager;
 
     void Start(){
-        state = 0;
+        _state = 0;
         gameManager = GameObject.FindGameObjectWithTag("Manager");
     }
 
-    void flipCard(){
+    public void flipCard(){
+        if (_state == 0)
+            _state = 1;
+        if (_state == 1)
+            _state = 0;
+
         //check if card is showing its back(1) or front(0)
-        if (state == 0 && !DO_NOT)
+        if (_state == 0 && !DO_NOT)
             gameManager.GetComponent<Image>().sprite = cardBack;
-        else if (state ==1 && !DO_NOT) 
+        else if (_state == 1 && !DO_NOT) 
             gameManager.GetComponent<Image>().sprite = cardFront;
-        
     }
 
-    //get or set card value
-    public int manageCardValue(){
-        get {return cardValue;}
-        set {cardValue = value;}
+    public int cardValue{
+        get => _cardValue; 
+        set => _cardValue = value; 
     }
 
     //get or set state value
-    public int manageState(){
-        get {return state;}
-        set {state = value;}
+    public int state{
+        get => _state;
+        set => _state = value;
     }
 
     //get or set @initialized
-    public bool initialize(){
-        get {return initialized;}
-        set {initialized = value;}
+    public bool initialized{
+        get {return _initialized;}
+        set {_initialized = value;}
     }
 
     // initializing all Graphics
     public void setGraphics(){
-        cardBack = gameManager.GetComponent<gameManager>().getCardBack();
-        cardFront = gameManager.GetComponent<gameManager>().getCardFront(cardValue);
+        cardBack = gameManager.GetComponent<GameManager>().getCardBack();
+        cardFront = gameManager.GetComponent<GameManager>().getCardFront(_cardValue);
 
         flipCard();
     }
 
-    public void checkPause(){
-        StartCoroutine(checkPause());
-
-        IEnumerator pause(){
-            yield return new WaitForSeconds(1);
-            if (state == 0)
-                GetComponent<Image>().sprite = cardBack;
-            else if (state == 1)
-                GetComponent<Image>().sprite = cardFront;
-            DO_NOT = false;
-        }
+    public void checkWindowForMatch(){
+        StartCoroutine(pause());
     }
-
-    
-
+    IEnumerator pause(){
+        yield return new WaitForSeconds(1);
+        //no match (_state = 0)
+        if (_state == 0)
+            GetComponent<Image>().sprite = cardBack;
+        // match (_state = 1)
+        else if (_state == 1)
+            GetComponent<Image>().sprite = cardFront;
+        DO_NOT = false;
+    }
 }
+*/
